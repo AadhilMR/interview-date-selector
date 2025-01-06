@@ -6,7 +6,7 @@
       "type": "git",
       "url": "https://github.com/AadhilMR/interview-date-selector.git"},
     "scripts": {
-      "start": "php -S 0.0.0.0:$PORT -t public"
+      "start": "php -S 0.0.0.0:$PORT -t api"
     },
     "dependencies": {},
     "devDependencies": {}
