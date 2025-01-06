@@ -1,0 +1,136 @@
+html,
+body {
+    width: 100%;
+    margin: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    user-select: none;
+}
+
+.header {
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 3rem;
+    background-color: rgb(11, 123, 123);
+}
+
+@media (max-width:767px) {
+    .header {
+        height: 100px;
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width:768px) {
+    .header {
+        height: 150px;
+        font-size: 2rem;
+    }
+}
+
+@media (min-width:992px) {
+    .header {
+        height: 170px;
+        font-size: 3rem;
+    }
+}
+
+.footer {
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 0.8rem;
+    background-color: rgb(11, 123, 123);
+}
+
+.form-control {
+    box-shadow: none !important;
+}
+
+.slot {
+    text-align: center;
+    border: 1px solid rgb(175, 175, 175);
+    background-color: rgb(221, 221, 221);
+    padding: 2px 4px;
+    border-radius: 4px;
+    user-select: none;
+}
+
+.slot.slot-date {
+    padding: 2px 15px;
+}
+
+.slot.slot-time {
+    cursor: pointer;
+}
+
+@media (max-width:767px) {
+    .slot {
+        font-size: 0.85rem;
+    }
+}
+
+@media (min-width:768px) {
+    .slot {
+        font-size: 1rem;
+    }
+}
+
+.slot.slot-time.selected {
+    background-color: rgb(3, 184, 184);
+    border-color: rgb(0, 134, 134);
+    color: white;
+    cursor: default !important;
+}
+
+.slot.slot-time.selection {
+    background-color: rgb(145, 211, 222);
+    border-color: rgb(50, 129, 240);
+}
+
+button {
+    width: 170px;
+    height: 45px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    color: white;
+    background-color: teal;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    background-color: rgb(3, 144, 144);
+}
+
+button:active {
+    background-color: rgb(6, 106, 106);
+}
+
+#loader {
+    width: 14px;
+    height: 14px;
+    border: 2px solid #FFF;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
