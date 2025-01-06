@@ -13,6 +13,13 @@
         { "src": "/api/script.js", "use": "@vercel/static" }
     ],
     "routes": [
-        { "src": "/(.*)", "dest": "/api/$1" }
+        { "src": "/(.*)", "dest": "/api/$1" },
+        { "src": "/(.css)", "dest": "/api/style.css" },
+        { "src": "/(.css)", "dest": "/api/checkbox.css" },
+        { "src": "/(.js)", "dest": "/api/EmailValidator.js" },
+        { "src": "/(.js)", "dest": "/api/firebase_config.js" },
+        { "src": "/(.js)", "dest": "/api/firebase.js" },
+        { "src": "/(.js)", "dest": "/api/request.js" },
+        { "src": "/(.js)", "dest": "/api/script.js" }
     ]
 }
