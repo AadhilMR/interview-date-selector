@@ -3,16 +3,16 @@
         "api/*.php": { "runtime": "vercel-php@0.7.3" }
     },
     "builds": [
-        { "src": "/api/index.php", "use": "@vercel/php" },
-        { "src": "/api/style.css", "use": "@vercel/static" },
-        { "src": "/api/checkbox.css", "use": "@vercel/static" },
-        { "src": "/api/EmailValidator.js", "use": "@vercel/static" },
-        { "src": "/api/firebase_config.js", "use": "@vercel/static" },
-        { "src": "/api/firebase.js", "use": "@vercel/static" },
-        { "src": "/api/request.js", "use": "@vercel/static" },
-        { "src": "/api/script.js", "use": "@vercel/static" }
+        { "src": "index.php", "use": "@vercel/php" },
+        { "src": "style.css", "use": "@vercel/static" },
+        { "src": "checkbox.css", "use": "@vercel/static" },
+        { "src": "EmailValidator.js", "use": "@vercel/static" },
+        { "src": "firebase_config.js", "use": "@vercel/static" },
+        { "src": "firebase.js", "use": "@vercel/static" },
+        { "src": "request.js", "use": "@vercel/static" },
+        { "src": "script.js", "use": "@vercel/static" }
     ],
     "routes": [
-        { "src": "/(.*)", "dest": "/api/index.php" }
+        { "src": "/(.*)", "dest": "index.php" }
     ]
 }
