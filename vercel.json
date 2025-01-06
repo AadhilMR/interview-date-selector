@@ -13,7 +13,7 @@
         { "src": "/api/script.js", "use": "@vercel/static" }
     ],
     "routes": [
-        { "src": "/(.*)", "dest": "/api/$1" },
+        { "src": "/(.php)", "dest": "/api/index.php" },
         { "src": "/(.css)", "dest": "/api/style.css" },
         { "src": "/(.css)", "dest": "/api/checkbox.css" },
         { "src": "/(.js)", "dest": "/api/EmailValidator.js" },
