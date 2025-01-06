@@ -1,6 +1,6 @@
 {
     "functions": {
-        "/api/**/*.php": { "runtime": "vercel-php@0.7.3" }
+        "api/**/*.php": { "runtime": "vercel-php@0.7.3" }
     },
     "builds": [
         { "src": "/api/index.php", "use": "@vercel/php" },
@@ -13,7 +13,7 @@
         { "src": "/api/script.js", "use": "@vercel/static" }
     ],
     "routes": [
-        { "src": "/api/(.*)", "dest": "/api/$1" }
+        { "src": "/(.*)", "dest": "/api/$1" }
     ],
     "env": {
         "NOW_PHP_FOO": "bar3"
